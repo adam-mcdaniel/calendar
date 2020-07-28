@@ -10,7 +10,5 @@ Install with [nimble](https://github.com/nim-lang/nimble).
 ```bash
 git clone https://github.com/adam-mcdaniel/calendar
 cd calendar
-nimble install
-
-cal
+nimble install; cal
 ```
