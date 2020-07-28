@@ -86,10 +86,11 @@ proc `$`*(date: Date): string =
             if (i-sat) %% 7 == 0:
                 result &= "\n"
 
-let
-    current_time = now()
-    m = int(current_time.month)
-    d = int(current_time.monthday)
-    y = int(current_time.year)
+when isMainModule:
+    let
+        current_time = now()
+        m = int(current_time.month)
+        d = int(current_time.monthday)
+        y = int(current_time.year)
 
-echo date(m, d, y)
+    echo date(m, d, y)
